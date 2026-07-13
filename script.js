@@ -28,6 +28,12 @@ cocoSsd.load().then(function(model) {
           result.innerHTML = '🔴 UNSTABLE: Shelving detected! (' + score + '% sure)<br>Fix: Anchor top to wall studs. Cost: $10-$25';
           }
         });
+      if (found === false) {
+        result.innerHTML = '✅ No hazards detected. Move camera around your room to scan.';
+        }
+      });
+    }, 1000);
+  });
       
           
         
